@@ -1,0 +1,6 @@
+.idea/
+*~
+*.bak
+*.old
+node_modules/
+bower_components/
