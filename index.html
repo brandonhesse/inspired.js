@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Abstract</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body data-ng-controller="IndexCtrl">
+<div class="container" data-ng-cloak>
+    <h1>{{hello}}</h1>
+    <h3>{{noWay}}</h3>
+    <div>
+        <div class="col-sm-5">
+            <input type="number" name="money" id="money" data-ng-model="money" min="0" class="form-control"
+                   placeholder="How much">
+        </div>
+        <button class="btn btn-primary" data-ng-click="askFor(money)">Ask Nicely.</button>
+        <button class="btn btn-danger" data-ng-click="begMore()">Beg!</button>
+    </div>
+</div>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="app.js"></script>
+<script src="app-ds.js"></script>
+<script src="app-index.js"></script>
+</body>
+</html>
